@@ -1,0 +1,85 @@
+/* body */
+body {
+  font-family: $primary-font;
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5em;
+  position: relative;
+}
+.d-body {
+  background: $d-body;
+}
+.container-wrapper {
+  padding: 15px 15px;
+  @media (min-width: 992px) {
+    padding: 30px 50px;
+  }
+}
+/* nav */
+nav {
+  background: transparent;
+  box-shadow: none;
+  position: absolute;
+  .sidenav-trigger {
+    color: $primary-color;
+    margin: 0;
+    @media (min-width: 600px) {
+      margin: 0 18px;
+    }
+    i {
+      font-size: 2em;
+    }
+  }
+}
+/* btn */
+.btn-b {
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid $primary-color;
+  color: $text-color;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease 0s;
+  text-transform: uppercase;
+  box-shadow: none;
+  margin-bottom: 3vh;
+  i {
+    transition: all 0.2s;
+  }
+  &:hover {
+    background: $primary-color;
+    color: $white;
+    transition: all 0.2s ease 0s;
+    i {
+      transform: translateX(10px);
+    }
+  }
+}
+/* Display flex */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.d-flex {
+  width: 100%;
+  display: block;
+  @media (min-width: 600px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/* Section */
+.section-p {
+  padding: 120px 0;
+}
+/* overlay */
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
