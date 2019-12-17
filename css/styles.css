@@ -102,6 +102,29 @@ nav {
   top: 0;
   bottom: 0; }
 
+/* Sidenav */
+.sidenav {
+  background-color: rgba(199, 0, 57, 0.83); }
+  .sidenav li a {
+    color: #fff; }
+    .sidenav li a:hover {
+      background-color: rgba(255, 255, 255, 0.15); }
+
+nav ul a {
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
+  nav ul a:hover {
+    background-color: transparent;
+    color: #c70039;
+    -webkit-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s; }
+
+/* Materialboxed */
+#materialbox-overlay {
+  background-color: #292929ab; }
+
 /* Header */
 .logo {
   width: auto;
@@ -212,6 +235,27 @@ nav {
   .personalizado-area .personalizado-content p {
     text-align: justify;
     margin-bottom: 40px; }
+  .personalizado-area .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    padding: 10px;
+    /* s = 600px, m = 600px, l = 992px, xl = 1200px */ }
+    @media (min-width: 992px) {
+      .personalizado-area .grid-container {
+        -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto; } }
+  .personalizado-area .grid-item {
+    margin: 0.3vh;
+    padding: 5px; }
+    .personalizado-area .grid-item .img {
+      width: 100%;
+      height: 100%; }
+      @media (min-width: 1600px) {
+        .personalizado-area .grid-item .img {
+          width: 200px;
+          height: 200px; } }
 
 /* Video */
 .video-area {
