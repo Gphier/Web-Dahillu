@@ -315,3 +315,78 @@ nav ul a {
   background: url(../img/Fondos/4.jpeg) no-repeat center center/cover; }
   .carousel-area .overlay-bg {
     background: rgba(199, 0, 57, 0.8); }
+  .carousel-area .item-thumb {
+    border-radius: 5px;
+    overflow: hidden; }
+    .carousel-area .item-thumb .img {
+      width: auto; }
+  .carousel-area .item-content {
+    text-align: justify;
+    margin-top: 50px;
+    padding-right: 0;
+    /* s = 600px, m = 600px, l = 992px, xl = 1200px */ }
+    @media (min-width: 992px) {
+      .carousel-area .item-content {
+        padding-right: 30px; } }
+    .carousel-area .item-content .item-title {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 600; }
+    .carousel-area .item-content .item-subtitle {
+      color: #fff;
+      font-size: 16px; }
+    .carousel-area .item-content .item-text {
+      color: #fff; }
+  .carousel-area .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: none;
+    /* s = 600px, m = 600px, l = 992px, xl = 1200px */ }
+    @media (min-width: 992px) {
+      .carousel-area .owl-dots {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        /* align-items: center; */
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    .carousel-area .owl-dots .owl-dot {
+      width: 30px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.3);
+      margin-bottom: 2vh;
+      border-radius: 15px;
+      -webkit-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s; }
+      .carousel-area .owl-dots .owl-dot:last-child {
+        margin-bottom: 0; }
+      .carousel-area .owl-dots .owl-dot.active {
+        background: white;
+        width: 50px; }
+
+/* Contacto */
+.contacto-area .contacto-title {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600; }
+
+.contacto-area input:not(.browser-default):focus:not([readonly]),
+.contacto-area textarea:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #c70039;
+  -webkit-box-shadow: 0 1px 0 0 #c70039;
+  box-shadow: 0 1px 0 0 #c70039; }
+
+.contacto-area input:not(.browser-default):focus:not([readonly]) + label,
+.contacto-area textarea:not(.browser-default):focus:not([readonly]) + label {
+  color: #c70039; }

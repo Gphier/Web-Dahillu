@@ -209,4 +209,80 @@
   .overlay-bg {
     background: rgba($primary-color, 0.8);
   }
+  .item-thumb {
+    border-radius: 5px;
+    overflow: hidden;
+    .img {
+      width: auto;
+    }
+  }
+  .item-content {
+    text-align: justify;
+    margin-top: 50px;
+    padding-right: 0;
+    /* s = 600px, m = 600px, l = 992px, xl = 1200px */
+    @media (min-width: 992px) {
+      padding-right: 30px;
+    }
+    .item-title {
+      color: $white;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .item-subtitle {
+      color: $white;
+      font-size: 16px;
+    }
+    .item-text {
+      color: $white;
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    display: none;
+    /* s = 600px, m = 600px, l = 992px, xl = 1200px */
+    @media (min-width: 992px) {
+      display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    }
+    .owl-dot {
+      width: 30px;
+      height: 3px;
+      background: rgba($white, 0.3);
+      margin-bottom: 2vh;
+      border-radius: 15px;
+      transition: all 0.2s ease 0s;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.active {
+        background: rgba($white, 1);
+        width: 50px;
+      }
+    }
+  }
 }
+/* Contacto */
+.contacto-area {
+  .contacto-title {
+    color: $black;
+    text-align: center;
+    font-size: 30px;
+      font-weight: 600;
+  }
+  input:not(.browser-default):focus:not([readonly]),
+  textarea:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid $primary-color;
+    box-shadow: 0 1px 0 0 $primary-color;
+  }
+  input:not(.browser-default):focus:not([readonly]) + label,
+  textarea:not(.browser-default):focus:not([readonly]) + label {
+    color: $primary-color;
+  }  
+}
+

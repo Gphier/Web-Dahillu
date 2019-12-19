@@ -7,10 +7,11 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
     /* Carousel */
     $('.carousel').carousel();
-    $('.carousel.carousel-slider').carousel({
-        fullWidth: true,
-        indicators: true
-    });
+    $('.owl-carousel').owlCarousel({
+        margin:10,
+        loop:true,
+        items:1,
+    })
     /* Play Btn */
     $('.modal').modal({
         dismissible: true,
