@@ -390,3 +390,64 @@ nav ul a {
 .contacto-area input:not(.browser-default):focus:not([readonly]) + label,
 .contacto-area textarea:not(.browser-default):focus:not([readonly]) + label {
   color: #c70039; }
+
+.contacto-area .contacto-info {
+  text-align: left; }
+  .contacto-area .contacto-info .box-info {
+    padding: 0 20px;
+    margin-bottom: 3vh;
+    margin-top: 3vh; }
+    .contacto-area .contacto-info .box-info h6 {
+      text-transform: uppercase;
+      font-weight: 700; }
+    .contacto-area .contacto-info .box-info span {
+      color: #bbb; }
+
+.contacto-area .bl1 {
+  border-left: 4px solid #ff5733; }
+
+.contacto-area .bl2 {
+  border-left: 4px solid #ffc30f; }
+
+.contacto-area .bl3 {
+  border-left: 4px solid #900c3f; }
+
+.contacto-area .bb {
+  border-bottom: 1px solid #E9E9E9; }
+
+/* Footer */
+.page-footer {
+  padding: 25px 0;
+  color: #fff;
+  background-color: #c70039; }
+  .page-footer .row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0; }
+  .page-footer .alineacion {
+    text-align: center;
+    margin-top: 2vh; }
+    @media (min-width: 992px) {
+      .page-footer .alineacion {
+        text-align: right;
+        margin-top: 0; } }
+    .page-footer .alineacion .icons {
+      color: #fff;
+      font-size: 1.5em;
+      margin-right: 2vh;
+      margin-left: 2vh;
+      vertical-align: middle;
+      -webkit-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s; }
+      .page-footer .alineacion .icons:hover {
+        -webkit-transition: all 0.2s ease 0s;
+        -o-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s;
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4); }
+  .page-footer .empresa {
+    color: white;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7); }

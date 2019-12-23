@@ -20,7 +20,8 @@
         href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
     <!-- CSS -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -28,7 +29,7 @@
 
 <body class="d-body">
     <!-- Header -->
-    <div class="d-body-wrap z-depth-5">
+    <div class="d-body-wrap z-depth-4">
         <!-- Nav -->
         <nav>
             <div class="container-wrapper">
@@ -36,7 +37,7 @@
                     <a href="#!" class="brand-logo"><img src="img/Logo/Dahillu.png" alt="Dahillu" class="logo"></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li class=""><a class="d-link" href="#">Inicio</a></li>
+                        <li class=""><a class="d-link" href="#">Inicio</a>
                         <li class=""><a class="d-link" href="#">Nosotros</a></li>
                         <li class=""><a class="d-link" href="#">Personalizados</a></li>
                         <li class=""><a class="d-link" href="#">Estampados</a></li>
@@ -358,14 +359,34 @@
         <!-- Contacto -->
         <section class="contacto-area section-p">
             <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h2 class="contacto-title">Contacto</h2>
+                <div class="row d-flex">
+                    <div class="col s12 m6">
+                        <div class="contacto-info">
+                            <div class="col s12 bb">
+                                <div class="box-info bl1">
+                                    <h6>dirección</h6>
+                                    <span>Lima - Perú</span>
+                                </div>
+                            </div>
+                            <div class="col s12 bb">
+                                <div class="box-info bl2">
+                                    <h6>teléfono</h6>
+                                    <span><a href="tel:+51989790827" style="color: #bbb;">(+51)
+                                            ###-###-###</a></span>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <div class="box-info bl3">
+                                    <h6>E-MAIL</h6>
+                                    <span><a href="mailto:hola@dahillu.pe"
+                                            style="color: #bbb;">hola@dahillu.pe</a></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
+                    <div class="col s12 m6">
+                        <h2 class="contacto-title">¿En qué podemos ayudarte?</h2>
+                        <form class="col s12">
                             <div class="input-field col s12 m6 l6">
                                 <input id="first_name" type="text" class="validate">
                                 <label for="first_name">Nombre</label>
@@ -374,8 +395,6 @@
                                 <input id="last_name" type="text" class="validate">
                                 <label for="last_name">Apellido</label>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="input-field col s12 m6 l6">
                                 <input id="email" type="email" class="validate">
                                 <label for="email">Email</label>
@@ -384,22 +403,38 @@
                                 <input id="phone" type="number" class="validate">
                                 <label for="phone">Celular</label>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                <label for="textarea1">Comments</label>
+                                <textarea id="textarea1" class="materialize-textarea validate"></textarea>
+                                <label for="textarea1">Consulta</label>
                             </div>
-                        </div>
-                        <div class="row">
                             <a class="waves-effect waves-light btn btn-b btn-large"><i
-                                class="material-icons right">keyboard_arrow_right</i>Enviar mensaje</a>
-                        </div>
-                    </form>
+                                    class="material-icons right">keyboard_arrow_right</i>Enviar mensaje</a>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>
         <!-- End Contacto -->
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col s12 m6">
+                        Dahillu © 2019 - Todos los Derechos Reservados | diseñado por <a href="https://vertrauen.pe/"
+                            target="_blank" class="empresa">Trauen Perú</a>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="alineacion">
+                            <a href="#"><i class="fa fa-facebook icons"></i></a>
+                            <a href="#"><i class="fa fa-twitter icons"></i></a>
+                            <a href="#"><i class="fa fa-whatsapp icons"></i></a>
+                            <a href="#"><i class="fa fa-instagram icons"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

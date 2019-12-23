@@ -246,9 +246,9 @@
     /* s = 600px, m = 600px, l = 992px, xl = 1200px */
     @media (min-width: 992px) {
       display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+      flex-direction: column;
     }
     .owl-dot {
       width: 30px;
@@ -273,7 +273,7 @@
     color: $black;
     text-align: center;
     font-size: 30px;
-      font-weight: 600;
+    font-weight: 600;
   }
   input:not(.browser-default):focus:not([readonly]),
   textarea:not(.browser-default):focus:not([readonly]) {
@@ -283,6 +283,69 @@
   input:not(.browser-default):focus:not([readonly]) + label,
   textarea:not(.browser-default):focus:not([readonly]) + label {
     color: $primary-color;
-  }  
+  }
+  .contacto-info {
+    text-align: left;
+    .box-info {
+      padding: 0 20px;
+      margin-bottom: 3vh;
+      margin-top: 3vh;
+      h6 {
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      span {
+        color: #bbb;
+      }
+    }
+  }
+  .bl1 {
+    border-left: 4px solid #ff5733;
+  }
+  .bl2 {
+    border-left: 4px solid #ffc30f;
+  }
+  .bl3 {
+    border-left: 4px solid #900c3f;
+  }
+  .bb {
+    border-bottom: 1px solid #E9E9E9;
+}
 }
 
+/* Footer */
+.page-footer {
+  padding: 25px 0;
+  color: #fff;
+  background-color: $primary-color;
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .alineacion {
+    text-align: center;
+    margin-top: 2vh;
+    @media (min-width: 992px) {
+      text-align: right;
+      margin-top: 0;
+    }
+    .icons {
+      color: #fff;
+      font-size: 1.5em;
+      margin-right: 2vh;
+      margin-left: 2vh;
+      vertical-align: middle;
+      transition: all 0.2s ease 0s;
+      &:hover {
+        transition: all 0.2s ease 0s;
+        transform: scale(1.4);
+      }
+    }
+  }
+  .empresa {
+    color: white;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
